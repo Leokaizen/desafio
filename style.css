@@ -1,0 +1,76 @@
+/* Estilos generales */
+body {
+    font-family: 'Marck Script', cursive; /* Fuente estilo manuscrito */
+    background-color: #f0e6d2; /* Beige claro, similar a papel antiguo */
+    color: #33251a; /* Marrón oscuro, similar a tinta antigua */
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 3em; /* Título más grande */
+    margin-bottom: 20px;
+}
+
+/* Estilos para los textareas */
+textarea {
+    width: 40%; /* Ajusta el ancho según tus preferencias */
+    height: 150px;
+    padding: 15px;
+    margin: 10px; /* Espacio entre los textareas */
+    border: 2px solid #8b7255; /* Borde marrón más claro */
+    font-family: 'Marck Script', cursive; /* Misma fuente que el cuerpo */
+    font-size: 1.2em; /* Texto ligeramente más grande */
+    resize: vertical; /* Permitir cambiar el alto, pero no el ancho */
+    display: inline-block; /* Coloca los textareas en línea */
+    vertical-align: top; /* Alinea la parte superior de los textareas */
+}
+
+/* Estilos para los botones */
+button, #btnCopiar {
+    background-color: #a07855; /* Marrón medio */
+    color: #f0e6d2; /* Beige claro */
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Marck Script', cursive; /* Misma fuente que el cuerpo */
+    font-size: 1.2em; /* Texto ligeramente más grande */
+    margin: 10px 0; /* Espacio entre los botones y otros elementos */
+}
+
+button:hover, #btnCopiar:hover {
+    background-color: #8b7255; /* Marrón más claro al pasar el mouse */
+}
+
+/* Estilos específicos para el textarea de resultado */
+#textoEncriptado {
+    display: none; /* Oculta el textarea por defecto */
+}
+
+#textoEncriptado.activo {
+    display: inline-block; /* Muestra el textarea en línea */
+}
+
+#textoEncriptado::before { /* Pseudo-elemento para la imagen de fondo */
+    content: "";
+    display: block;
+    min-width: 70%; /* Tamaño mínimo de 10rem */
+    min-height: 70%;
+    width: 100%;
+    height: 100%;
+    background-image: url("Muñeco.png"); /* Reemplaza con la ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3; /* Ajusta la opacidad según tus preferencias */
+}
+
+/* Estilos para el pie de página */
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer img {
+    height: 50px; /* Ajusta el tamaño de la imagen */
+    margin-right: 10px;
+}
